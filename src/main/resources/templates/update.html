@@ -5,8 +5,8 @@
   <title>Update</title>
 </head>
 <body>
-<h1>Update Student</h1>
-<form th:action = "@{/{id}/update (id=${student.id})}" method="post">
+  <h1>Update Student</h1>
+  <form th:action = "@{/{id}/update (id=${student.id})}" method="post">
   <!--  사용자가 제공할 데이터에 알맞은 input과 label을 만든1다.  -->
   <label for="name-input">
     Name: <input id="name-input" name="name" th:value="${student.name}">

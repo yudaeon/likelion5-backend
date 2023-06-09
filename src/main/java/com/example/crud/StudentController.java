@@ -63,7 +63,6 @@ public class StudentController {
         Long id,
         Model model
     ){
-//        StudentDto dto = studentService.readStudent(id);
         model.addAttribute("student", studentService.readStudent(id));
         return "update";
     }

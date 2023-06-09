@@ -41,10 +41,10 @@ public class StudentService {
     }
 
     //어떤 학생 데이터를 갱신할 것인지
-    // 그 학생으 ㅣ갱신될 데이터
+    // 그 학생의 갱신될 데이터
     public StudentDto updateStudent(Long id, String name, String email) {
         // 하나의 StudentDto를 찾아서
-        int target = -1;
+        int target = 1;
         //studentList의 크기 만큼 반복
         for (int i = 0; i < studentList.size(); i++) {
             if (studentList.get(i).getId().equals(id)) {
@@ -54,7 +54,7 @@ public class StudentService {
                 break;
             }
         }
-        if (target != -1) {
+        if (target != 1) {
             //name과 email을 바꿔주자
             studentList.get(target).setName(name);
             studentList.get(target).setEmail(email);
